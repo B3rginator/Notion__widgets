@@ -11,7 +11,7 @@
         /*CSS RESETS*/
 
 body{
-    background-color: #000;
+    background-color:  transparent;
     line-height: 1.6;
 
 }
@@ -36,10 +36,10 @@ h1 {
 }
 
 .card {
-    padding: 100px 200px 100px 200px;
+    padding: 50px 200px 50px 200px;
     border-radius: 10px;
-    background: #618E6C;
-    color: #fff;
+    background: #717744;
+    color: #EFF1ED;
     display: inline-block;
 }
 
@@ -92,7 +92,11 @@ h1 {
     
     <div class="card">
         <div class="greet" id="greet"></div>
+        <br>
+        </br>
       <div class="date" id="date"></div>
+        <br>
+        </br>
       <div class="clock">
         <div class="time" id="hour"></div>
         <div class="colon">:</div>
@@ -127,9 +131,9 @@ hrs = today.getHours();
 if (hrs < 12)
         greet = 'Godmorgen Linnea & Mikkel';
     else if (hrs >= 12 && hrs <= 17)
-        greet = 'God eftermiddag Linnea & Mikkel';
+        greet = 'Godeftermiddag Linnea & Mikkel';
     else if (hrs >= 17 && hrs <= 24)
-        greet = 'God aften Linnea & Mikkel';
+        greet = 'Godaften Linnea & Mikkel';
 // console.log(today.toLocaleTimeString());
 document.getElementById('greet').innerHTML = greet;
 document.getElementById('hour').innerHTML = hour;
