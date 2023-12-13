@@ -8,9 +8,9 @@
 
 	<!-- Google Font -->
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400&display=swap" rel="stylesheet">
 
 	<!-------->
 
@@ -24,7 +24,7 @@
 
 
 		.navMenu {
-			font-family: 'Advent Pro', sans-serif;
+            font-family: 'Source Sans 3', sans-serif;
 			padding: 8px;
 			text-align: center;
 			margin: 7px auto;
@@ -34,7 +34,7 @@
 		.navMenu a {
 			color: #272727;
 			text-decoration: none;
-			text-transform: uppercase;
+			text-transform: none;
 			display: inline-block;
 			padding: 6px;
 		}
@@ -58,18 +58,17 @@
 <body>
 
 	<nav class="navMenu  border background">
-		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
-		<a id="inbox" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-inbox"></i> Inbox</a>
-		<a id="week" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-week"></i> Planner</a>
-		<a id="projects" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-briefcase"></i> Projects</a>
-		<a id="tasks" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-list-check"></i> Tasks</a>
-		<a id="business" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-money-bill-wave"></i> Business</a>
-		<a id="knowledge" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-lightbulb"></i> Knowledge</a>
-		<a id="topics" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-layer-group"></i> Topics</a>
-		<a id="notes" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book"></i> Notes</a>
-		<a id="media" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bookmark"></i> Media</a>
-		<a id="resourses" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-wrench"></i> Resourses</a>
-		<a id="lifewiki" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"></i> Lifewiki</a>
+        <i class="fa-solid fa-bars"></i> Food base menu</a>
+        <a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-carrot"></i> Frugt og grønt</a>
+		<a id="inbox" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-egg"></i> Mejeri og æg</a>
+		<a id="week" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bacon"></i> Kød og fisk</a>
+		<a id="projects" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-jar-wheat"></i> Kolonial</a>
+		<a id="tasks" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-snowflake"></i> Frost</a>
+		<a id="business" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bread-slice"></i> Brød, kiks og kager</a>
+		<a id="topics" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-wine-glass"></i> Drikkevarer</a>
+		<a id="notes" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-cookie-bite"></i> Slik og snacks</a>
+		<a id="media" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Husholdning og bolig</a>
+		<a id="resourses" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-cart-plus"></i> Andet</a>
 
 
 
@@ -87,31 +86,25 @@
 		function navigate(id) {
 
 			if (id == 'home')
-				window.open("https://example.com", '_blank').focus();
+				window.open("https://www.notion.so/linneaberg/Frugt-og-gr-nt-5f357e590c4c4162832b000948a52a58?pvs=4", '_blank').focus();
 			else if (id == "inbox")
-				window.open("https://example.com", '_blank').focus();
+				window.open("https://www.notion.so/linneaberg/Mejeri-og-g-3f7457d8ce3649acb9aca7aae178fdf9?pvs=4", '_blank').focus();
 			else if (id == "week")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "month")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "projects")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "business")
-				window.open("https://example.com", '_blank').focus();
+				window.open("https://www.notion.so/linneaberg/K-d-og-fisk-db5748271d2145588bd08f30f33385b3?pvs=4", '_blank').focus();
+            else if (id == "projects")
+				window.open("https://www.notion.so/linneaberg/Kolonial-957af84c4ae54e918dbdaa0f58750f05?pvs=4", '_blank').focus();
 			else if (id == "tasks")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "knowledge")
-				window.open("https://example.com", '_blank').focus();
+				window.open("https://www.notion.so/linneaberg/Frost-f83d38f8c93d44869a8dff58d94b24bf?pvs=4", '_blank').focus();
+			else if (id == "business")
+				window.open("https://www.notion.so/linneaberg/Br-d-kiks-og-kager-45ad4ccf44984022a1673642f633a741?pvs=4", '_blank').focus();
 			else if (id == "topics")
-				window.open("https://example.com", '_blank').focus();
+				window.open("https://www.notion.so/linneaberg/Drikkevarer-a90b119b765a4592b5b9355a29c256d7?pvs=4", '_blank').focus();
 			else if (id == "notes")
-				window.open("https://example.com", '_blank').focus();
+				window.open("https://www.notion.so/linneaberg/Slik-og-snacks-d96d2496ee2945a292f6fcd181248b49?pvs=4", '_blank').focus();
 			else if (id == "media")
-				window.open("https://example.com", '_blank').focus();
-			else if (id == "resourses")
-				window.open("https://example.com3", '_blank').focus();
-			else if (id == "lifewiki")
-				window.open("https://example.com", '_blank').focus();
+				window.open("https://www.notion.so/linneaberg/Husholdning-og-bolig-5fb559aabcc04cb1a5a721a5d440ffab?pvs=4", '_blank').focus();
+			else if (id == "ressources")
+				window.open("https://www.notion.so/linneaberg/Andet-b05ecd9f179f461a91139334df401ffc?pvs=4", '_blank').focus();
 
 		}
 	</script>
