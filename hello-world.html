@@ -9,17 +9,31 @@ height: auto;
 </head>
 	
 <body style="background-color:#191919;">
+	<img id="dynamicImage" src="default_image.jpg" alt="Dynamic Image">
 <script type="text/javascript">
-	var day = new Date();
-	var hour = day.getHours();
-	// Display appropriate image based on the time
-	if (hour >= 6 && hour < 12) {
-		document.write('<img src="goodmorning.png">');
-	} else if (hour >= 12 && hour < 18) {
-		document.write('<img src="goodday.png">');
+
+
+
+	
+function updateImageBasedOnTime() {
+const currentHour = new Date().getHours();
+const imageElement = document.getElementById('dynamicImage');
+if (currentHour >= 6 && currentHour < 12) {
+		imageElement.src = 'goodmorning.png'; // Update this path
+	} else if (currentHour >= 12 && currentHour < 20) {
+	imageElement.src = 'goodday.png'; // Update this path
 	} else {
-		document.write('<img src="goodevening.png">');
+	imageElement.src = 'goodevening.png'; // Update this path
 	}
+}
+
+	
+// Call the function to check and update the image based on the current time
+updateImageBasedOnTime();
+
+// Optionally, set an interval to periodically check and update the image
+setInterval(updateImageBasedOnTime, 60000); // Checks every minute
+	
 </script>
 </body>
 </html>
