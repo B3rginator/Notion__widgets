@@ -18,9 +18,9 @@ height: auto;
 function updateImageBasedOnTime() {
 const currentHour = new Date().getHours();
 const imageElement = document.getElementById('dynamicImage');
-if (currentHour >= 6 && currentHour < 12) {
+if (currentHour >= 5 && currentHour < 12) {
 		imageElement.src = 'goodmorning.png'; // Update this path
-	} else if (currentHour >= 12 && currentHour < 20) {
+	} else if (currentHour >= 12 && currentHour < 18) {
 	imageElement.src = 'goodday.png'; // Update this path
 	} else {
 	imageElement.src = 'goodevening.png'; // Update this path
